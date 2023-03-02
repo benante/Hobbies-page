@@ -84,8 +84,7 @@ a {
 /* IMGs */
 
 .profile-pic {
-  width: 450px;
-  border-radius: 10%;
+  max-width: 450px;
 }
 
 .pic_hobbies {
@@ -97,9 +96,9 @@ a {
 }
 
 @media (min-width: 1000px) {
-  .hobbies-flex {
-    display: flex;
-    flex-direction: row;
+  .hobbies-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     margin: 0 1em;
 
@@ -126,9 +125,5 @@ a {
   hr {
     display: none;
   }
-  /* Do I need this following?? */
-  /* .hobbies-flex {
-    display: flex;
-    flex-direction: column;
-  } */
+  
 }
